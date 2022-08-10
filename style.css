@@ -1,0 +1,192 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+ul {
+  margin: 20px;
+}
+
+section {
+  padding: 20px;
+
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  align-content: center;
+  width: 100%;
+}
+
+
+/* ---  Groups & Items --- */
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+.item img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.item-double img {
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  padding: 15px;
+}
+
+form label {
+  font-weight: bold;
+  width: 90%;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+
+@media all and (min-width: 600px) {
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .logo {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .item img {
+    width: 90%;
+  }
+
+  .item-double img {
+    width: 95%;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
